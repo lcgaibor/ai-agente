@@ -1,6 +1,10 @@
 import { generateText } from 'ai';
 import { groq } from '@ai-sdk/groq';
 
+if (!process.env.GROQ_API_KEY) {
+  throw new Error('GROQ_API_KEY environment variable is required');
+}
+
 interface UserContext {
   name?: string;
   preferences: string[];

@@ -9,7 +9,6 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: 'AsistenteLess - Tu Agente de IA Personal',
   description: 'Conversa con AsistenteLess, tu agente de IA autónomo amigable, inteligente y contextual',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
