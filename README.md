@@ -6,7 +6,7 @@ Un agente de IA personal y autónomo construido con Next.js, que aprende de tus 
 
 Clona el repositorio:
 
-git clone https://github.com/tu-usuario/ai-agente.git
+git clone https://github.com/lcgaibor/ai-agente.git
 cd ai-agente
 
 
