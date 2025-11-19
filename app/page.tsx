@@ -104,6 +104,20 @@ export default function Home() {
     }
   };
 
+  const handleNewConversation = () => {
+    setMessages([{
+      id: '1',
+      type: 'agent',
+      content: '¡Hola! 👋 Soy AsistenteLess, tu agente de IA personal. Estoy aquí para ayudarte a responder preguntas, explorar temas nuevos y aprender más sobre ti. ¿Cuál es tu nombre?',
+      timestamp: new Date(),
+    }]);
+    setUserContext({
+      preferences: [],
+      topics: [],
+    });
+    setHasGreeted(true);
+  };
+
   return (
     <div className="flex h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-800">
       {/* Sidebar */}
@@ -118,7 +132,10 @@ export default function Home() {
         <UserProfile userContext={userContext} />
 
         <div className="flex-1 overflow-y-auto px-4 py-4 space-y-2">
-          <button className="w-full text-left px-4 py-2 rounded-lg bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900 dark:to-purple-900 text-gray-800 dark:text-white hover:shadow-md transition-shadow font-medium">
+          <button
+            onClick={handleNewConversation}
+            className="w-full text-left px-4 py-2 rounded-lg bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900 dark:to-purple-900 text-gray-800 dark:text-white hover:shadow-md transition-shadow font-medium"
+          >
             + Nueva Conversación
           </button>
         </div>

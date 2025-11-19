@@ -60,7 +60,6 @@ Responde SIEMPRE en español, de manera natural y amigable.`;
       system: systemPrompt,
       messages: messagesForGroq,
       temperature: 0.8,
-      maxTokens: 300,
     });
 
     return Response.json({
