@@ -27,7 +27,7 @@ npm run dev
 
 Abre en tu navegador:
 
-http://localhost:3000
+https://ai-agente.vercel.app/
 
 💬 Uso
 
